@@ -1,0 +1,57 @@
+# Arquivos temporários gerados pelo Visual Studio
+.vs/
+
+# Arquivos de compilação gerados
+bin/
+obj/
+
+# Arquivos de dependências do NuGet
+*.nuget.props
+*.paket.props
+*.paket.targets
+**/packages/
+
+# Arquivos de configuração
+*.config
+*.user
+*.vsconfig
+*.csproj.user
+*.sln.docstates
+
+# Logs e arquivos de exceção
+*.log
+*.cache
+*.swp
+
+# Arquivos de compilação gerados por diferentes IDEs/compiladores
+[Tt]humbs.db
+*.DS_Store
+ehthumbs.db
+Desktop.ini
+
+# Cache e arquivos temporários
+*.tmp
+*.bak
+*.cache
+*.db
+
+# Logs e relatórios
+*.log
+*.logs
+*.0
+*.1
+*.2
+*.3
+*.4
+*.5
+*.6
+*.7
+*.8
+*.9
+
+# Arquivos de saída do código de cobertura
+*.cobertura
+*.cov
+
+# Ferramentas e arquivos específicos do usuário
+ToolVersion.txt
