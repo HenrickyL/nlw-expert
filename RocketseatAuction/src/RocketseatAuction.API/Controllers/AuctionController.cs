@@ -8,11 +8,11 @@ namespace RocketseatAuction.API.Controllers;
 public class AuctionController : ControllerBase
 {
     [HttpGet("{id}")]
-    public IActionResult GetCurrentAuction(int id)
+    public async Task<IActionResult> GetCurrentAuction(int id)
     {
         var useCase = new GetCurrentAuctionUseCase();
 
-        var result = useCase.Execute(id);
+        var result = await useCase.Execute(id);
         return Ok(result);
     }
 }
