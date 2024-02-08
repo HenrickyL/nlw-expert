@@ -7,12 +7,12 @@ namespace RocketseatAuction.API.Controllers;
 [ApiController]
 public class AuctionController : ControllerBase
 {
-    [HttpGet]
-    public IActionResult GetCurrentAuction()
+    [HttpGet("{id}")]
+    public IActionResult GetCurrentAuction(int id)
     {
         var useCase = new GetCurrentAuctionUseCase();
 
-        var result = useCase.Execute();
+        var result = useCase.Execute(id);
         return Ok(result);
     }
 }
